@@ -65,7 +65,7 @@ contract SVGie is ERC721TGNT {
 
     function toggleMintActive() public {
         if (msg.sender != owner) revert OnlyOwner();
-        if (mintActive) mintActive = true;
+        if (!mintActive) mintActive = true;
         else mintActive = false;
     }
 

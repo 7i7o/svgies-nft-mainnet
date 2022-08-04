@@ -14,7 +14,7 @@ contract SVGie is ERC721TGNT {
 
     error OnlyOwner();
 
-    constructor(uint256 mintPrice) ERC721TGNT("Test", "Test") {
+    constructor(uint256 mintPrice) ERC721TGNT("SVGie", "SVGie") {
         owner = msg.sender;
         price = mintPrice;
     }
